@@ -111,7 +111,7 @@ const Education = () => {
             className="relative flex flex-col sm:flex-row items-center mb-16 w-full"
           >
             {/* Timeline Circle */}
-            <div className="absolute left-1 sm:left-1/2 transform -translate-x-1/2 top-6 sm:top-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-14 h-14 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div className="absolute left-1 sm:left-1/2 transform -translate-x-1/2 top-10 sm:top-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-14 h-14 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
               <img
                 src={edu.img}
                 alt={edu.school}
@@ -121,7 +121,7 @@ const Education = () => {
 
             {/* Content Box */}
             <div
-              className={`ml-2 sm:ml-0 w-full sm:w-1/2 p-6 rounded-2xl shadow-2xl border border-white bg-purple-500 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transition-transform duration-300 hover:scale-105
+              className={`ml-2 sm:ml-0 w-full sm:w-1/2 p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transition-transform duration-300 hover:scale-105
               ${index % 2 === 0 ? "sm:pr-12 sm:text-right" : "sm:pl-12 sm:ml-auto sm:text-left"}`}
             >
               <div className="flex items-start space-x-4 sm:space-x-6">
