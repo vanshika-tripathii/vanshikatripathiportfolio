@@ -17,38 +17,33 @@ const Experience = () => {
         </p>
       </div>
 
-      {/* Experience Timeline */}
+      {/* Timeline Container */}
       <div className="relative">
-        {/* Vertical line → centered for desktop, left on mobile */}
-               <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-white h-full hidden sm:block"></div>
+        {/* Vertical line fixed on the LEFT */}
+        <div className="absolute left-6 top-0 w-1 bg-white h-full"></div>
 
-        {/* Experience Entries */}
         {experiences.map((experience, index) => (
           <div
             key={experience.id}
-            className={`relative mb-16 flex md:items-center md:w-1/2 ${
+            className={`relative mb-16 flex items-center w-full ${
               index % 2 === 0
-                ? "md:ml-auto md:pl-12 text-left"
-                : "md:mr-auto md:pr-12 text-left md:text-right"
+                ? "md:ml-20 md:pl-12 text-left"
+                : "md:ml-20 md:pl-12 text-left"
             }`}
           >
             {/* Timeline Circle */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-6 sm:top-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-14 h-14 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div className="absolute left-6 transform -translate-x-1/2 bg-gray-200 border-4 border-[#8245ec] w-12 h-12 sm:w-14 sm:h-14 rounded-full flex justify-center items-center z-20">
               <img
                 src={experience.img}
                 alt={experience.company}
-                className="w-10 h-10 object-contain"
+                className="w-8 h-8 object-contain rounded-full"
               />
             </div>
 
             {/* Content Section */}
-            <div className="ml-20 md:ml-0 md:mr-0 w-full p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105">
-              {/* Flex container for image and text */}
-              <div
-                className={`flex items-center space-x-6 ${
-                  index % 2 !== 0 ? "md:flex-row-reverse md:space-x-reverse" : ""
-                }`}
-              >
+            <div className="ml-20 w-full p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105">
+              {/* Flex container for image + text */}
+              <div className="flex items-center space-x-6">
                 {/* Company Logo/Image */}
                 <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
                   <img
@@ -58,7 +53,7 @@ const Experience = () => {
                   />
                 </div>
 
-                {/* Role, Company Name, and Date */}
+                {/* Role, Company Name, Date */}
                 <div className="flex flex-col justify-between">
                   <div>
                     <h3 className="text-xl sm:text-2xl font-semibold text-white">
@@ -72,7 +67,10 @@ const Experience = () => {
                 </div>
               </div>
 
+              {/* Description */}
               <p className="mt-4 text-gray-400">{experience.desc}</p>
+
+              {/* Skills */}
               <div className="mt-4">
                 <h5 className="font-medium text-white">Skills:</h5>
                 <ul className="flex flex-wrap mt-2">
