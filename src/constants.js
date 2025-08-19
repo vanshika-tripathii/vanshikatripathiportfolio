@@ -29,7 +29,7 @@ import postmanLogo from './assets/tech_logo/postman.png';
 import figmaLogo from './assets/tech_logo/figma.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
-import csharpLogo from './assets/tech_logo/csharp.png';
+// import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
 import yellowLambdaLogo from './assets/company_logo/yellowlambda_logo.png';
@@ -86,7 +86,7 @@ export const SkillsInfo = [
       { name: 'C++', logo: cppLogo },
       { name: 'Java', logo: javaLogo },
       { name: 'Python', logo: pythonLogo },
-      { name: 'C-Sharp', logo: csharpLogo },
+      // { name: 'C-Sharp', logo: csharpLogo },
       { name: 'Java Script', logo: javascriptLogo },
       { name: 'Type Script', logo: typescriptLogo },
     ],
