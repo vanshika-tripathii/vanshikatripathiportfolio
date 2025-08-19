@@ -32,7 +32,7 @@ import postgreLogo from './assets/tech_logo/postgre.png';
 import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
-import yellowLambdaLogo from './assets/company_logo/yellowLambda_logo.png';
+import yellowLambdaLogo from './assets/company_logo/yellowlambda_logo.png';
 import codsoftLogo from './assets/company_logo/codsoft_logo.png';
 
 
