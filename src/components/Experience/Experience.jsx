@@ -138,7 +138,7 @@ const Experience = () => {
               {/* Card */}
               <div
                 className={`sm:max-w-md p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
-                  isLeft ? "mr-[calc(50%+1rem)]" : "ml-[calc(50%+1rem)]"
+                  isLeft ? "mr-[calc(50%+0rem)]" : "ml-[calc(50%+0rem)]"
                 }`}
               >
                 <div className="flex items-center space-x-6">
