@@ -108,7 +108,7 @@ const Education = () => {
               <img
                 src={edu.img}
                 alt={edu.school}
-                className="w-full h-full object-cover rounded-full"
+                className="hidden md:block w-16 h-16 object-contain mr-6"
               />
             </div>
 
