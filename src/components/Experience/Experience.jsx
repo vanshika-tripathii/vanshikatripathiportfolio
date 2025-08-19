@@ -101,7 +101,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="py-24 px-[6vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -115,8 +115,8 @@ const Experience = () => {
 
       {/* Timeline */}
       <div className="relative">
-        {/* Vertical Line */}
-        <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-1 bg-white h-full"></div>
+        {/* Vertical Line - only visible on desktop */}
+        <div className="hidden md:block absolute left-1/2 top-0 transform -translate-x-1/2 w-[2px] bg-white h-full"></div>
 
         {experiences.map((experience, index) => {
           const isLeft = index % 2 === 0;
@@ -124,22 +124,28 @@ const Experience = () => {
           return (
             <div
               key={experience.id}
-              className={`mb-16 flex relative ${isLeft ? "justify-end" : "justify-start"}`}
+              className="mb-16 flex flex-col md:flex-row relative"
             >
               {/* Circle */}
-              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-10 h-10 sm:w-12 sm:h-12 rounded-full flex justify-center items-center z-10">
+              <div
+                className="absolute left-1/2 md:top-1/2 transform -translate-x-1/2 
+                md:-translate-y-1/2 bg-white border-2 border-[#8245ec] 
+                w-8 h-8 sm:w-10 sm:h-10 rounded-full flex justify-center items-center z-10"
+              >
                 <img
                   src={experience.img}
                   alt={experience.company}
-                  className="w-8 h-8 object-contain rounded-full"
+                  className="w-4 h-4 sm:w-6 sm:h-6 object-contain rounded-full"
                 />
               </div>
 
               {/* Card */}
               <div
-                className={`sm:max-w-md p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
-                  isLeft ? "mr-[calc(50%+0rem)]" : "ml-[calc(50%+0rem)]"
-                }`}
+                className={`w-full sm:max-w-md p-6 rounded-2xl shadow-2xl border border-white 
+                  bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] 
+                  transform transition-transform duration-300 hover:scale-105 
+                  mt-12 md:mt-0
+                  ${isLeft ? "md:mr-[calc(50%+1rem)]" : "md:ml-[calc(50%+1rem)]"}`}
               >
                 <div className="flex items-center space-x-6">
                   {/* Company Logo */}
@@ -190,5 +196,6 @@ const Experience = () => {
 };
 
 export default Experience;
+
 
 
