@@ -236,8 +236,8 @@ export const SkillsInfo = [
         "Showcasing my journey with a sleek portfolio powered by React & Tailwind.Minimal design, smooth UI, and an elegant developer touch",
       image: portfolioLogo,
       tags: ["HTML", "CSS","JavaScript","React JS","Taiwind CSS"],
-      github: "",
-      webapp: "",
+      github: "https://github.com/vanshika-tripathii/vanshikatripathiportfolio",
+      webapp: "https://vanshikatripathiportfolio.vercel.app/",
     },
     
   ];  
