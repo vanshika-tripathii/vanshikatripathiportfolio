@@ -19,14 +19,14 @@ const Experience = () => {
       {/* Timeline wrapper */}
       <div className="relative">
         {/* Vertical timeline line */}
-        <div className="absolute left-4 sm:left-1/2 top-0 transform sm:-translate-x-1/2 w-1 bg-white h-full"></div>
+        <div className="absolute left-1 sm:left-1/2 top-0 transform sm:-translate-x-1/2 w-1 bg-white h-full"></div>
 
         {/* Timeline items */}
         <div className="space-y-16">
           {experiences.map((exp, index) => (
             <div key={exp.id} className="relative flex items-center">
               {/* Circle on the timeline */}
-              <div className="absolute left-4 sm:left-1/2 transform -translate-x-1/2 bg-white border-4 border-purple-500 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-20">
+              <div className="absolute left-1 sm:left-1/2 transform -translate-x-1/2 bg-white border-4 border-purple-500 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-20">
                 <img
                   src={exp.img}
                   alt={exp.company}
@@ -36,7 +36,7 @@ const Experience = () => {
 
               {/* Card */}
               <div
-          className={`ml-14 sm:ml-0 w-full sm:w-1/2 p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transition-transform duration-300 hover:scale-105 ${
+          className={`ml-12 sm:ml-0 w-full sm:w-1/2 p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transition-transform duration-300 hover:scale-105 ${
           index % 2 === 0
           ? "sm:pr-12 sm:mr-auto sm:text-right"
           : "sm:pl-12 sm:ml-auto sm:text-left"
