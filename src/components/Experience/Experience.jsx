@@ -31,7 +31,7 @@ const Experience = () => {
               className={`mb-16 flex relative ${isLeft ? "justify-end" : "justify-start"}`}
             >
               {/* Circle */}
-              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-10 h-10 sm:w-12 sm:h-12 rounded-full flex justify-center items-center z-10">
+              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-12 h-12 sm:w-14 sm:h-14 rounded-full flex justify-center items-center z-10">
                 <img
                   src={experience.img}
                   alt={experience.company}
