@@ -19,7 +19,7 @@ const Experience = () => {
       {/* Timeline wrapper */}
       <div className="relative">
         {/* Vertical timeline line */}
-        <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-1 bg-purple-500 h-full hidden sm:block"></div>
+        <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-1 bg-white h-full hidden sm:block"></div>
 
         {/* Timeline items */}
         <div className="space-y-16">
