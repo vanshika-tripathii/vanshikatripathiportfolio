@@ -137,8 +137,8 @@ const Experience = () => {
 
               {/* Card */}
               <div
-                className={`w-full sm:max-w-md p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
-                  isLeft ? "mr-auto" : "ml-auto"
+                className={`sm:max-w-md p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
+                  isLeft ? "mr-[calc(50%+2.5rem)]" : "ml-[calc(50%+2.5rem)]"
                 }`}
               >
                 <div className="flex items-center space-x-6">
@@ -190,4 +190,5 @@ const Experience = () => {
 };
 
 export default Experience;
+
 
