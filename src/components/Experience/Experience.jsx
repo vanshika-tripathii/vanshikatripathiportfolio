@@ -36,7 +36,7 @@ const Experience = () => {
 
               {/* Card */}
               <div
-          className={`ml-5 sm:ml-0 w-full sm:w-1/2 p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transition-transform duration-300 hover:scale-105 ${
+          className={`ml-4 sm:ml-0 w-full sm:w-1/2 p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transition-transform duration-300 hover:scale-105 ${
           index % 2 === 0
           ? "sm:pr-12 sm:mr-auto sm:text-right"
           : "sm:pl-12 sm:ml-auto sm:text-left"
