@@ -42,7 +42,9 @@ const Experience = () => {
             </div>
 
             {/* Content Section */}
-            <div className="ml-20 md:ml-0 md:mr-0 w-full p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105">
+            <div className={`ml-20 md:ml-0 md:mr-0 w-full p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105"
+             ${index % 2 === 0 ? "sm:pr-12 sm:text-right" : "sm:pl-12 sm:ml-auto sm:text-left"}`}
+            >
               {/* Flex container for image and text */}
               <div
                 className={`flex items-center space-x-6 ${
