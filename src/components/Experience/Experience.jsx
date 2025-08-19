@@ -26,7 +26,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div key={exp.id} className="relative flex items-center">
               {/* Circle on the timeline */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-900 border-4 border-purple-500 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-20">
+              <div className="absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-purple-500 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-20">
                 <img
                   src={exp.img}
                   alt={exp.company}
