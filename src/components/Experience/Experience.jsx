@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="py-24 px-4 sm:px-6 md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2 overflow-x-hidden"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -28,10 +28,10 @@ const Experience = () => {
           return (
             <div
               key={experience.id}
-              className={`mb-16 flex relative ${isLeft ? "justify-end" : "justify-start"}`}
+              className={`mb-16 flex relative md:${isLeft ? "justify-end" : "justify-start"} justify-center`}
             >
               {/* Circle */}
-              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-12 h-12 sm:w-14 sm:h-14 rounded-full flex justify-center items-center z-10">
+              <div className="absolute left-1/2 top-1/2 md:top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-12 h-12 sm:w-14 sm:h-14 rounded-full flex justify-center items-center z-20">
                 <img
                   src={experience.img}
                   alt={experience.company}
@@ -41,9 +41,8 @@ const Experience = () => {
 
               {/* Card */}
               <div
-                className={`sm:max-w-md p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105 ${
-                  isLeft ? "mr-[calc(50%+0rem)]" : "ml-[calc(50%+0rem)]"
-                }`}
+                className={`w-full sm:max-w-md p-6 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transform transition-transform duration-300 hover:scale-105
+                  md:${isLeft ? "mr-[calc(50%+2rem)]" : "ml-[calc(50%+2rem)]"}`}
               >
                 <div className="flex items-center space-x-6">
                   {/* Company Logo */}
@@ -94,4 +93,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
