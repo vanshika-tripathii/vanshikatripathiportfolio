@@ -111,7 +111,7 @@ const Education = () => {
             className="relative flex flex-col sm:flex-row items-center mb-16 w-full"
           >
             {/* Timeline Circle */}
-            <div className="absolute left-1 sm:left-1/2 transform -translate-x-1/2 top-2 sm:top-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-14 h-14 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div className="absolute left-1 sm:left-1/2 transform -translate-x-1/2 top-6 sm:top-1/2 -translate-y-1/2 bg-white border-4 border-[#8245ec] w-14 h-14 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
               <img
                 src={edu.img}
                 alt={edu.school}
