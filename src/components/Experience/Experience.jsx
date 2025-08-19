@@ -131,7 +131,7 @@ const Experience = () => {
                 <img
                   src={experience.img}
                   alt={experience.company}
-                  className="w-10 h-10 object-contain rounded-full"
+                  className="w-5 h-5 object-contain rounded-full"
                 />
               </div>
 
