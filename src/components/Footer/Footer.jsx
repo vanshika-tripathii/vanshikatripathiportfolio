@@ -40,7 +40,7 @@ const Footer = () => {
           {[
           
             { icon: <FaTwitter />, link: " https://x.com/Vanshu_tri?t=IpmNWHpxttUSzR7VAdksVA&s=08" },
-            { icon: <FaLinkedin />, link: "www.linkedin.com/in/vanshika-tripathi-5a9737266" },
+            { icon: <FaLinkedin />, link: "https://linkedin.com/in/vanshika-tripathi-5a9737266" },
           { icon: <FaGithub />, link: "https://github.com/vanshika-tripathii" },
             { icon: <FaYoutube />, link: "https://www.youtube.com/@VanshikaTripathi-md3eh" },
             
